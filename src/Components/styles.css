@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+:root{
+  --green-blue: hsla(211, 63%, 40%, 1); 
+  --lavender-web: hsla(224, 31%, 90%, 1);
+   --columbia-blue: hsla(216, 35%, 82%, 1); 
+   --tufts-blue: hsla(208, 62%, 52%, 1); 
+   --royal-blue-traditional: hsla(218, 100%, 23%, 1);
+}
+.navbar {
+  margin: 0;
+  padding: 0 30px;
+  border-bottom-left-radius:  10px;
+  border-bottom-right-radius:  10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    background-color:var(--green-blue);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  .logo:hover{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .nav-menu, .nav-userSetting {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu li, .nav-userSetting li {
+    font-size: 16px;
+  }
+  
+  .nav-menu a, .nav-userSetting a {
+    text-decoration: none;
+    color: white
+  }
+  
+  
+  .nav-userSetting .sign-in {
+    background-color:var(--royal-blue-traditional);
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .nav-userSetting a:hover{
+    color: black;
+  }
+  .nav-userSetting .sign-in:hover{
+    background-color: yellow;
+    border:solid 1px var(--royal-blue-traditional);
+  }
+  .nav-userSetting .register {
+    border: solid var(--royal-blue-traditional) 1px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .nav-userSetting .register:hover{
+    background-color: var(--tufts-blue);
+    border: solid 1px var(--tufts-blue);
+  }
+  .logo-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .logo-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 0,0.7);
+    border-radius: 50px;
+  
+  }
+  .nav-menu li {
+    position: relative;
+    overflow: hidden; 
+    padding: 5px;
+  }
+  
+  .nav-menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  .nav-menu li:hover a::before {
+    width: 100%; 
+  }

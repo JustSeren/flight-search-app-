@@ -1,0 +1,11 @@
+.containerResult{
+    display: flex;
+    flex-direction: column;
+
+    background-color: antiquewhite;
+}
+.flight-results{
+    display: flex;
+    flex-direction: column;
+    
+}
